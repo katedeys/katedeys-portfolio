@@ -76,6 +76,12 @@
   .tbl th { text-align: left; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--fg-3); font-weight: 600; padding: 8px 12px 8px 0; border-bottom: 2px solid var(--fg); }
   .tbl td { vertical-align: top; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--line); color: var(--fg-2); }
   .tbl td:last-child { color: var(--fg); font-weight: 500; }
+  .contact { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-top: 10px; font-size: 15px; color: var(--fg-2); }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact b { color: var(--fg); font-weight: 600; }
+  .contact span { color: var(--fg-3); }
+  footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; color: var(--fg-2); display: grid; gap: 4px; }
+  footer.foot a { color: var(--accent); text-decoration: none; }
   html { scroll-behavior: smooth; }
   section.case { scroll-margin-top: 72px; }
   .topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
@@ -115,6 +121,7 @@
   <header>
     <h1>Ekaterina Deys</h1>
     <div class="role">Lead Technical PM · Payments, money movement &amp; partner integrations</div>
+    <div class="contact"><a href="mailto:katedeys@gmail.com">katedeys@gmail.com</a><span>·</span><a href="https://linkedin.com/in/kate-deys">linkedin.com/in/kate-deys</a><span>·</span><b>Open to roles from November 2026</b><span>·</span>remote or relocation</div>
     <div class="meta">Case studies redrawn from scratch and generalised: no partner names, internal systems or figures beyond my CV.</div>
   </header>
   <p class="intro">I design how money, data and systems move between a product, its partners and its users. These cases show the problem, the architecture I drew, the decisions behind it, and what I would do differently.</p>
@@ -134,6 +141,10 @@
       <div class="fact"><b>My role</b><span>0 → MVP → pivot: partners, flows, commercial model, launch path</span></div>
       <div class="fact"><b>Model</b><span>Our margin plus interbank FX, negotiated with the partner until volume tiers</span></div>
     </div>
+
+    <h3>The market</h3>
+    <p>The Gulf is the largest source of remittances in the world: GCC countries sent out about $161B in 2025, with the UAE and Saudi Arabia at roughly $62B and $58B. For scale, one corridor of the kind we worked on, UAE and Saudi Arabia to the Philippines, officially carries around $4B a year (4.6% and 6.6% of the Philippines' $35.6B in 2025 cash remittances), and the real figure is higher, because transfers are recorded where the remitting institution sits. Even a 1% share of that one corridor is about $40M a year flowing to families who are, or could become, our borrowers.</p>
+    <p class="note" style="margin-top:6px">Sources: GCC-Stat 2025 outward worker remittances; Bangko Sentral ng Pilipinas 2025 cash remittances by source country. The share scenario is illustrative.</p>
 
     <h3>The problem</h3>
     <p>Many of our borrowers' families depend on relatives working in the Gulf. That money already crossed borders every month, but through other apps, so we saw neither the revenue nor the income it proved. The goal was to bring that flow into our product fast, without building a cross-border stack first.</p>
@@ -521,6 +532,10 @@
     <p class="note">Generalised from my work at a ride-hailing super-app. Diagrams redrawn from scratch; provider names omitted.</p>
     <a class="backtop" href="#top">↑ Back to contents</a>
   </section>
+  <footer class="foot">
+    <div><b>Ekaterina Deys</b> · Lead Technical PM, payments and money movement</div>
+    <div><a href="mailto:katedeys@gmail.com">katedeys@gmail.com</a> · <a href="https://linkedin.com/in/kate-deys">linkedin.com/in/kate-deys</a> · open to product and solutions roles from November 2026, remote or relocation</div>
+  </footer>
 </div>
 <script>
 (function () {
